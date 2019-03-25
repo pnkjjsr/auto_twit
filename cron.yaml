@@ -1,0 +1,6 @@
+cron:
+- description: "every day"
+  url: /
+  schedule: every 24 hours
+  timezone: Asia/Kolkata
+  target: beta
