@@ -1,6 +1,6 @@
 cron:
 - description: "every day"
   url: /
-  schedule: every 24 hours
+  schedule: every 5 hours from 00:00 to 23:00
   timezone: Asia/Kolkata
   target: beta

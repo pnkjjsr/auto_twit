@@ -11,11 +11,15 @@ app.get('/', (req, res) => {
       return response.json();
     })
     .then(function (data) {
+
+      var rno = Math.floor(Math.random() * 10)
+      console.log(rno);
+
       const twitCont = {
-        "title": data.articles[0].title,
-        "desc": data.articles[0].description,
-        "url": data.articles[0].url,
-        "urlToImage": data.articles[0].urlToImage
+        "title": data.articles[rno].title,
+        "desc": data.articles[rno].description,
+        "url": data.articles[rno].url,
+        "urlToImage": data.articles[rno].urlToImage
       }
       twit(req, res, twitCont);
     });

@@ -1,5 +1,4 @@
 const twitterize = require("twitterize");
-const twitterizeMedia = require("./twitterize/src");
 
 module.exports = async (req, res, twitCont) => {
 
